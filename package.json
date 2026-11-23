@@ -1,0 +1,49 @@
+{
+  "name": "ubuntu-service-create",
+  "version": "1.0.0",
+  "description": "Author, validate, and write standard Ubuntu systemd service unit files matching KeshavSoft VPS conventions.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./v1": "./src/v1/index.js"
+  },
+  "bin": {
+    "ubuntu-service-create": "bin/index.js",
+    "usc": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "src",
+    "README.md"
+  ],
+  "scripts": {
+    "start": "node bin/index.js",
+    "cli": "node bin/index.js",
+    "test": "node --test"
+  },
+  "keywords": [
+    "ubuntu",
+    "systemd",
+    "service",
+    "create",
+    "generate",
+    "cli",
+    "keshavsoft",
+    "vps",
+    "hosting"
+  ],
+  "author": "KeshavSoft",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keshavsoft/ubuntu-service-create.git"
+  },
+  "bugs": {
+    "url": "https://github.com/keshavsoft/ubuntu-service-create/issues"
+  },
+  "homepage": "https://keshavsoft.github.io/ubuntu-service-docs/",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
